@@ -67,3 +67,5 @@ moondancelabs/tanssi \
 --blocks-pruning=2000 \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb
+
+rm -rf start.sh
