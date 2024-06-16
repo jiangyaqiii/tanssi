@@ -1,1 +1,19 @@
 # tanssi
+
+======部署tanssi节点===================================================
+
+wget -O start.sh https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/start.sh && chmod +x start.sh && ./start.sh
+
+=====================================================
+
+======查看节点日志=====================================================
+
+curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/logs.sh |bash
+
+================================================================
+
+=============查看同步高度，返回false表示同步完成===========================
+
+curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/get_key.sh |bash
+
+=========================================================================
