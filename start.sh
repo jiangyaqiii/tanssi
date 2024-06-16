@@ -42,7 +42,7 @@ sudo chown -R $(id -u):$(id -g) /var/lib/dancebox
 read -p "请输入自己想设置的节点名称: " node_name
 read -p "请输入自己想设置的区块生产者节点名称: " cotainer_name
 read -p "请输入自己想设置的中继链名称: " relay_name
-docker run --network="host" -v "/var/lib/dancebox:/data" \
+docker run -d --network="host" -v "/var/lib/dancebox:/data" \
 -u $(id -u ${USER}):$(id -g ${USER}) \
 moondancelabs/tanssi \
 --chain=dancebox \
