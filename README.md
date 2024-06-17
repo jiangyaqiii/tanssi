@@ -12,7 +12,7 @@ curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/logs.sh |bash
 
 ================================================================
 
-=============查看同步高度，返回false表示同步完成===========================
+=============获取会话密钥===========================
 
 curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/get_key.sh |bash
 
