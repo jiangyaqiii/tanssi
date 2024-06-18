@@ -27,3 +27,11 @@ curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/look_latest_log
 curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/get_key.sh |bash
 
 =========================================================================
+
+=============获取配置信息钥===========================
+
+curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/look_config_info.sh.sh |bash
+
+=========================================================================
+
+
