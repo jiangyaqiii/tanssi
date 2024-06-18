@@ -13,7 +13,6 @@ wget -O start.sh https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/start.
 ======查看节点日志=====================================================
 
 curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/logs.sh |bash
-wget -O logs.sh https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/logs.sh && chmod +x logs.sh && ./logs.sh
 
 ================================================================
 
