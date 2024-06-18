@@ -16,6 +16,12 @@ curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/logs.sh |bash
 
 ================================================================
 
+======查看最新的节点日志=====================================================
+
+curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/look_latest_logs.sh |bash
+
+================================================================
+
 =============获取会话密钥===========================
 
 curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/web/get_key.sh |bash
