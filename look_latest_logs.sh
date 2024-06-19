@@ -1,1 +1,2 @@
-docker logs -n 100 $(docker ps -a --filter ancestor=moondancelabs/tanssi --format "{{.ID}}")
+container_id = "docker ps | head -n 2 | cut -d ' ' -f 1"
+docker logs -f --tail=50 $container_id
