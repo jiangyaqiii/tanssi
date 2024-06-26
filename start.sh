@@ -29,7 +29,7 @@ read -p "请输入自己想设置的区块生产者节点名称: " cotainer_name
 read -p "请输入自己想设置的中继链名称: " relay_name
 docker run -d --network="host" -v "/var/lib/dancebox:/data" \
 -u $(id -u ${USER}):$(id -g ${USER}) \
-moondancelabs/tanssi \
+moondancelabs/tanssi:v0.6.3 \
 --chain=dancebox \
 --name=$node_name \
 --sync=warp \
