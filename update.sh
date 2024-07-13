@@ -1,4 +1,4 @@
-docker ps -qf "ancestor=moondancelabs/tanssi:v0.6.3"
+docker stop $(docker ps -qf "ancestor=moondancelabs/tanssi:v0.6.3")
 
 read -p "请输入自己想设置的节点名称: " node_name
 read -p "请输入自己想设置的区块生产者节点名称: " cotainer_name
