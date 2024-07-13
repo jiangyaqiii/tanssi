@@ -54,6 +54,7 @@ moondancelabs/tanssi:v0.6.3 \
 --database paritydb
 
 sleep 60
+docker stop $(docker ps -aqf "ancestor=moondancelabs/tanssi:v0.6.3")
 
 docker run -d --network="host" -v "/var/lib/dancebox:/data" \
 -u $(id -u ${USER}):$(id -g ${USER}) \
