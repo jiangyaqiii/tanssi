@@ -54,6 +54,7 @@ moondancelabs/tanssi:v0.6.3 \
 --database paritydb
 
 sleep 60
+echo "升级到v7.0.0"
 docker stop $(docker ps -aqf "ancestor=moondancelabs/tanssi:v0.6.3")
 
 docker run -d --network="host" -v "/var/lib/dancebox:/data" \
@@ -82,4 +83,5 @@ moondancelabs/tanssi \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb
 
+echo "升级完成"
 rm -rf start.sh
