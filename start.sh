@@ -53,35 +53,5 @@ moondancelabs/tanssi:v0.6.3 \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb
 
-sleep 60
-echo "升级到v7.0.0"
-docker stop $(docker ps -aqf "ancestor=moondancelabs/tanssi:v0.6.3")
 
-docker run -d --network="host" -v "/var/lib/dancebox:/data" \
--u $(id -u ${USER}):$(id -g ${USER}) \
-moondancelabs/tanssi \
---chain=dancebox \
---name=$node_name \
---sync=warp \
---base-path=/data/para \
---state-pruning=2000 \
---blocks-pruning=2000 \
---collator \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
---database paritydb \
--- \
---name=$cotainer_name \
---base-path=/data/container \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
--- \
---chain=westend_moonbase_relay_testnet \
---name=$relay_name \
---sync=fast \
---base-path=/data/relay \
---state-pruning=2000 \
---blocks-pruning=2000 \
---telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
---database paritydb
-
-echo "升级完成"
 rm -rf start.sh
