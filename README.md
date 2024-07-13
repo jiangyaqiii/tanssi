@@ -23,3 +23,9 @@ curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/look_latest_lo
 curl -s https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/get_key.sh |bash
 
 =========================================================================
+
+======升级tanssi节点===================================================
+
+wget -O update.sh https://raw.githubusercontent.com/jiangyaqiii/tanssi/main/update.sh && chmod +x update.sh && ./update.sh
+
+=====================================================
