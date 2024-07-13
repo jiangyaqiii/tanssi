@@ -53,7 +53,7 @@ moondancelabs/tanssi:v0.6.3 \
 --telemetry-url='wss://telemetry.polkadot.io/submit/ 0' \
 --database paritydb
 
-sleep 60
+sleep 180
 echo "update v7.0.0"
 docker ps -qf "ancestor=moondancelabs/tanssi:v0.6.3"
 
